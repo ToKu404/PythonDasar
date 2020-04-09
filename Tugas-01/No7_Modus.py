@@ -18,7 +18,8 @@ while len(data2)>0:
         modus.append(data2[0])
     elif(data2.count(data2[0])==terbanyak):
         modus.append(data2[0])
-    data2.remove(data2[0])
+    data2 = [value for value in data2 if value!=data2[0]]
+    print(data2)
 
 print("MODUS = ",end=" ")
 for i in range(0, len(modus)):
